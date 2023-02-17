@@ -222,34 +222,5 @@ function add() {
 
 
 
-let circles = document.querySelectorAll('.circle');
-function setup() {
-    for (let i = 0; i < circles.length; i++) {
-        let circle = circles[i];
-
-        //随机生成div边长
-        let circleSize = Math.round(30 + Math.random() * 150);
-        //随机生成圆心坐标
-        let x = Math.random() * window.innerWidth * 0.9;
-        let y = Math.random() * window.innerHeight * 0.5;
-        //随机生成透明度
-        let opacity = Math.random();
-        //设置透明度
-        circle.style.opacity = opacity;
-        //设置圆随机旋转
-        let rotate = Math.random() * 360;
-        circle.style.transform = `rotate(${rotate}deg)`;
-        //设置圆的位置
-        circle.style.left = x + 'px';
-        circle.style.top = y + 'px';
-        //设置圆的边长
-        circle.style.width = circleSize + 'px';
-        circle.style.height = circleSize + 'px';
-    }
-    //计时器重复执行
-}
-setInterval(setup, 1000);
-
-setup();
 
 
