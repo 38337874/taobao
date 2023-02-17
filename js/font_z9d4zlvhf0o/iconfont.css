@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1656486533878') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-taobaotese:before {
+  content: "\e600";
+}
+
+.icon-bangzhu:before {
+  content: "\e601";
+}
+
+.icon-guifandunpai:before {
+  content: "\e625";
+}
+
+.icon-fukuanfangshi:before {
+  content: "\e629";
+}
+

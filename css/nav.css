@@ -1,0 +1,428 @@
+/* 导航栏样式 */
+.nav_container {
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.nav {
+    display: flex;
+    width: 1228px;
+    background-color: rgb(245, 245, 245);
+    font-size: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: var(--nav-6c);
+}
+
+.nav>ul {
+    min-width: 49em;
+}
+
+.nav li {
+    position: relative;
+    float: left;
+    padding: 0 6px;
+    height: 35px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+/* 所属地区样式 */
+.region {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    z-index: 1;
+}
+
+.region::after {
+    content: '';
+    position: relative;
+    background-image: url(../images/nav_d_arrow.png);
+    width: 6px;
+    height: 6px;
+
+}
+
+.region::before {
+    display: none;
+    content: '';
+    left: 0;
+    bottom: -1px;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+
+}
+
+.region:hover {
+    background-color: #fff;
+    border: 1px solid var(--e);
+    border-bottom: 1px solid #fff;
+
+}
+
+.right_nav {
+    margin-right: -9px;
+}
+
+.left_nav .region:hover .region_menu,
+.left_nav .region:hover::before {
+    display: flex;
+}
+
+/* 地区下拉菜单 */
+
+.region_menu li {
+    text-indent: 8px;
+    background-color: #fff;
+}
+
+.region_menu li:hover {
+
+    background-color: rgb(244, 244, 244);
+}
+
+.region_menu ul li:nth-of-type(1),
+.region_menu ul li:nth-of-type(18) {
+    z-index: -1;
+    height: 17.5px;
+}
+
+
+.region_menu {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    top: 33px;
+    left: -1px;
+    max-width: 250px;
+    max-height: 270px;
+    overflow-y: scroll;
+    line-height: normal;
+    border: 1px solid var(--e);
+    overflow-x: hidden;
+}
+
+.region_menu li {
+    padding: 0;
+    min-width: 231px;
+
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+
+.nav .right_nav a:hover {
+    color: var(--base-color);
+}
+
+
+/* 我的淘宝样式 */
+.my_taobao {
+    position: relative;
+    display: flex;
+    width: 80px;
+    align-items: center;
+    border: 1px solid transparent;
+    z-index: 1;
+    padding: 0 10px;
+}
+
+.my_taobao:hover {
+    background-color: #fff;
+    border: 1px solid var(--e);
+    border-bottom: 1px solid #fff;
+}
+
+.right_nav>li:hover .taobao_menu {
+    display: block;
+}
+
+.taobao_menu {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    width: 91px;
+    top: 33px;
+    left: -1px;
+    background-color: #fff;
+    border: 1px solid var(--e);
+}
+
+.taobao_menu li {
+    cursor: pointer;
+}
+
+.taobao_menu ul>li:hover {
+    width: 100%;
+    background-color: var(--e);
+
+}
+
+
+
+.my_taobao::after {
+    content: '';
+    position: relative;
+    left: 10px;
+    background-image: url(../images/nav_d_arrow.png);
+    width: 6px;
+    height: 6px;
+}
+
+.my_taobao:hover::before {
+    content: '';
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    z-index: 2;
+}
+
+/* 购物车 */
+.shopping_cart {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.shopping_cart::after {
+    content: '';
+    position: relative;
+    background: url(../images/shopping_cart.svg) no-repeat;
+    left: -58px;
+    width: 14px;
+    height: 14px;
+}
+
+
+/* 收藏夹 */
+.favorites {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    border: 1px solid transparent;
+    z-index: 1;
+}
+
+.favorites:hover {
+    background-color: #fff;
+    border: 1px solid var(--e);
+
+}
+
+.favorites:hover a {
+    color: var(--base-color);
+}
+
+.favorites::after {
+    content: '';
+    position: relative;
+    left: -5px;
+    background: url(../images/nav_d_arrow.png) no-repeat;
+    width: 6px;
+    height: 6px;
+}
+
+.favorites::before {
+    content: '';
+    position: relative;
+    background: url(../images/favorites.svg) no-repeat;
+    width: 12px;
+    height: 12px;
+    line-height: 35px;
+    left: 5px;
+}
+
+.favorites:hover::before {
+    content: '';
+    position: relative;
+    background: url(../images/c_favorites.svg) no-repeat;
+    width: 12px;
+    height: 12px;
+    line-height: 35px;
+
+}
+
+.favorites_menu {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    width: 75px;
+
+    top: 33px;
+    left: -1px;
+    background-color: #fff;
+    border: 1px solid var(--e);
+    border-top: 1px solid #fff;
+    z-index: 2;
+}
+
+.favorites:hover .favorites_menu {
+    display: block;
+}
+
+.favorites_menu li:hover {
+    width: 100%;
+    background-color: var(--e);
+    cursor: pointer;
+}
+
+/* 卖家中心 */
+.seller_center {
+    margin-right: 10px;
+    position: relative;
+    border: 1px solid transparent;
+}
+
+.seller_center:hover {
+    background-color: #fff;
+    border: 1px solid var(--e);
+}
+
+.seller_center::after {
+    content: '';
+    background-image: url(../images/nav_d_arrow.png);
+    width: 6px;
+    height: 6px;
+}
+
+.seller_center_menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    top: 33px;
+    left: -1px;
+}
+
+.seller_center:hover .seller_center_menu {
+    display: flex;
+
+    z-index: 1;
+    width: 90px;
+    border: 1px solid var(--e);
+    border-top: 1px solid #fff;
+}
+
+.seller_center_menu li:hover {
+    width: 100%;
+    background-color: var(--e);
+    cursor: pointer;
+}
+
+/* 联系客服 */
+.customer_service {
+    border: 1px solid transparent;
+}
+
+.customer_service:hover {
+    background-color: #fff;
+    border: 1px solid var(--e);
+}
+
+.customer_service::after {
+    content: '';
+    position: relative;
+    background-image: url(../images/nav_d_arrow.png);
+    width: 6px;
+    height: 6px;
+}
+
+.customer_service_menu {
+    display: none;
+    width: 72px;
+    position: absolute;
+    top: 33px;
+    left: -0.5px;
+    z-index: 1;
+}
+
+.customer_service:hover .customer_service_menu {
+    display: flex;
+    background-color: #fff;
+    border: 1px solid var(--e);
+    border-top: 1px solid #fff;
+}
+
+.customer_service li:hover {
+    width: 100%;
+    background-color: var(--e);
+    cursor: pointer;
+}
+
+/* 右侧导航栏 */
+
+.right_f_nav {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 60px;
+    background-color: #ffffff;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    z-index: 999;
+    background-color: #F7F9FA;
+    box-shadow: -2px 0 30px 2px rgb(97 105 119 / 18%);
+    border-radius: 18px 0 0 18px;
+    width: 60px;
+
+}
+
+
+.right_f_nav>div {
+    position: relative;
+    text-align: center;
+    width: 60px;
+    height: 47px;
+    margin: 15px 0 10px 0;
+    font-size: 12px;
+    z-index: 1;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.right_f_nav>div>span {
+    display: block;
+}
+
+.right_f_nav .back_top {
+    display: none;
+}
+
+.icon {
+    width: 2em;
+    height: 2em;
+    vertical-align: -0.15em;
+    color: #333;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+    .right_f_nav {
+        right: -55px;
+        border-left: 3px solid #ddd;
+    }
+
+    .right_f_nav:hover {
+        right: 0;
+        border: none;
+    }
+}

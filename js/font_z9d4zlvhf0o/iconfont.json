@@ -1,0 +1,37 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "102386725",
+      "name": "淘宝特色",
+      "font_class": "taobaotese",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "102386726",
+      "name": "帮助",
+      "font_class": "bangzhu",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "102386727",
+      "name": "规范－盾牌",
+      "font_class": "guifandunpai",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "102386729",
+      "name": "付款方式",
+      "font_class": "fukuanfangshi",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+@import url(common.css);
+@import url(nav.css);
+@import url(search_head.css);
+@import url(main.css);
+@import url(like.css);
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    .left_nav {
+        margin-left: 20px;
+        min-width: 360px !important;
+    }
+
+
+
+    .classify {
+        display: none;
+    }
+
+    .like {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        outline: 0 none;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .classify,
+    .main_center,
+    .main_top,
+    .nav,
+    .download_container,
+    .s_bottom,
+    .help_containers,
+    .logo,
+    .head.scroll {
+        display: none;
+    }
+
+    .m_container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+    }
+
+    .s_container {
+        width: 50%;
+        min-width: 300px !important;
+        left: 40px;
+    }
+
+
+
+    .head {
+        width: 60%;
+        height: 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_right {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+
+
+    .like {
+        width: 100%;
+    }
+
+    .like h3 {
+        margin-left: 30px;
+    }
+
+    .like_containers {
+        flex-wrap: wrap;
+
+    }
+
+    .l_containers {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 16px;
+        background-color: #f7f9fa;
+        border: 1px solid #f7f9fa;
+        border-radius: 12px;
+        transition: .5s;
+        overflow: hidden;
+    }
+
+    .info {
+        max-height: none;
+        width: 90%;
+        white-space: warp;
+        height: auto;
+        font-size: 8px !important;
+    }
+
+    .price_value {
+        width: 186px;
+    }
+
+
+}

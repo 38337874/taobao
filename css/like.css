@@ -1,0 +1,131 @@
+/* 猜你喜欢 */
+.like {
+    display: flex;
+    position: relative;
+    width: 1190px;
+    padding: 19px;
+    flex-direction: column;
+}
+
+
+.like h3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 0;
+    margin-left: 20px;
+    float: left;
+    color: #111;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+
+}
+
+.like_containers {
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+/* 商品容器 */
+.l_containers {
+    width: 372px;
+    margin: auto;
+    margin-bottom: 16px;
+    background-color: #f7f9fa;
+    border: 1px solid #f7f9fa;
+    border-radius: 12px;
+    transition: .5s;
+
+}
+
+.l_containers:hover {
+    border: 1px solid var(--base-color);
+    background-color: #fff;
+    box-shadow: -8px 8px 10px rgba(247, 145, 12, 0.1);
+}
+
+.l_containers>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 11px;
+}
+
+/* 商品图片容器 */
+.like_picture {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    background-color: rgba(27, 23, 67, 0.03);
+    border-radius: 10px;
+}
+
+.like_picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.like_picture img:hover {
+    filter: brightness(1.07);
+}
+
+/* 商品介绍容器 */
+.item_info {
+    height: 116px;
+    margin-left: 162px;
+    overflow: hidden;
+
+}
+
+.info {
+    display: inline-block;
+    width: 186px;
+    max-height: 46px;
+    margin: 6px 0 2px 0;
+    overflow: hidden;
+    color: #333;
+    font-size: 16px;
+    line-height: 23px;
+
+}
+
+.tag {
+    display: inline-block;
+    height: 20px;
+    margin-right: 6px;
+    padding: 0 4px;
+    color: var(--f5);
+    font-size: 12px;
+    line-height: 18px;
+    vertical-align: top;
+    border: 1px solid var(--f5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.item_price {
+    margin-left: 162px;
+    margin-bottom: 15px;
+}
+
+.price_value {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 22px;
+    color: var(--f5);
+}
+
+.price_value em {
+
+    font-style: normal;
+    margin-right: 4px;
+    font-size: 14px;
+    font-family: "Microsoft Yahei";
+    vertical-align: middle;
+}

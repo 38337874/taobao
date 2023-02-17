@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5142",
+      "name": "化妆品",
+      "font_class": "huazhuangpin",
+      "unicode": "345c",
+      "unicode_decimal": 13404
+    },
+    {
+      "icon_id": "259479",
+      "name": "男装",
+      "font_class": "nanzhuang",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "750913",
+      "name": "女装",
+      "font_class": "nvzhuang",
+      "unicode": "e7b7",
+      "unicode_decimal": 59319
+    },
+    {
+      "icon_id": "1654622",
+      "name": "鞋子",
+      "font_class": "xiezi",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "8423785",
+      "name": "医药箱",
+      "font_class": "huaban",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "9166438",
+      "name": "沙发",
+      "font_class": "shafa",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "25545749",
+      "name": "cherry",
+      "font_class": "cherry-01",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "28427032",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    }
+  ]
+}

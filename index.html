@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <title>淘宝网 - 淘！我喜欢</title>
+    <link rel="icon" type="image/x-icon" href="./images/taobao.ico" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="flex">
+    <!-- 顶部导航栏 -->
+    <div class="nav_container flex">
+        <div class="nav">
+            <ul class="left_nav">
+                <li class="region">
+                    <div><span style="margin-right: 10px;">中国大陆</span>
+                    </div>
+                    <div class="region_menu">
+                        <ul>
+                            <li></li>
+                            <li>全球</li>
+                            <li>中国大陆</li>
+                            <li>中国香港</li>
+                            <li>中国台湾</li>
+                            <li>中国澳门</li>
+                            <li>韩国</li>
+                            <li>马来西亚</li>
+                            <li>澳大利亚</li>
+                            <li>新加坡</li>
+                            <li>新西兰</li>
+                            <li>加拿大</li>
+                            <li>日本</li>
+                            <li>越南</li>
+                            <li>泰国</li>
+                            <li>菲律宾</li>
+                            <li>柬埔寨</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div><a href="https://login.taobao.com/member/login.jhtml?"
+                            style="color:var(--base-color); margin: 6px;">亲,请登录</a><a href="#" class=" tcc">免费注册</a>
+                    </div>
+                </li>
+                <li><a href="#" class=" tcc">手机逛淘宝</a></li>
+                <li><a href="#" class=" tcc">网页无障碍</a></li>
+
+            </ul>
+            <ul class="right_nav">
+                <li class="my_taobao">
+                    <div><a href="#">我的淘宝</a>
+                    </div>
+                    <div class="taobao_menu">
+                        <ul>
+                            <li style="margin-top:10px ;">已买到的宝贝</li>
+                            <li style="margin-bottom: 10px;">我的足迹</li>
+
+                        </ul>
+                    </div>
+
+                </li>
+                <li style="cursor:pointer">
+                    <div class="shopping_cart"><a href="#">购物车</a></div>
+                </li>
+                <li class="favorites">
+                    <div class="flex" style="width:60px ;"><a href="#">收藏夹</a></div>
+                    <div class="favorites_menu">
+                        <ul>
+                            <li style="margin-top: 10px;">收藏的宝贝</li>
+                            <li style="margin-bottom: 10px;">收藏的店铺</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <a href="#" style="margin:5px;">商品分类</a>
+                        <a href="#">免费开店</a>
+                    </div>
+                </li>
+                <li style="color: #dddddd;">|</li>
+                <li class="seller_center flex">
+                    <div style="margin-right:10px ;">
+                        <a href="#">千牛卖家中心</a>
+                    </div>
+                    <div class="seller_center_menu">
+                        <ul>
+                            <li style="margin-top: 10px;">开店入驻</li>
+                            <li>已卖出的宝贝</li>
+                            <li>出售中的宝贝</li>
+                            <li>卖家服务市场</li>
+                            <li>卖家培训中心</li>
+                            <li>体检中心</li>
+                            <li style="margin-bottom: 10px;">电商学习中心</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="customer_service flex">
+                    <div style="margin-right: 10px;"><a href="#">联系客服</a></div>
+                    <div class="customer_service_menu">
+                        <ul>
+                            <li style="margin-top: 10px;">消费者客服</li>
+                            <li>卖家客服</li>
+                            <li>意见反馈</li>
+                            <li style="margin-bottom: 10px;">网页版旺旺</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 右侧导航栏 -->
+    <div class="right_f_nav">
+        <div>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-kefu"></use>
+            </svg>
+            <span>官方客服</span>
+        </div>
+
+        <div>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-icon_A"></use>
+            </svg>
+            <span>反馈</span>
+        </div>
+
+        <div>
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-jubao"></use>
+            </svg>
+            <span>举报</span>
+        </div>
+        <div class="back_top">
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-huidaodingbu"></use>
+            </svg>
+            <span>回到顶部</span>
+        </div>
+    </div>
+
+    <!-- logo及搜索框和二维码容器 -->
+    <div class="head flex">
+        <div class="logo flex">
+            <a href="#">
+                <img src="./images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="s_container">
+            <div class="s_top flex">
+                <div class="search_type">
+                    <div>
+                        <ul>
+                            <li style="border-top-left-radius:20px;border-bottom-left-radius:20px;">宝贝
+                                <div style=" width:6px;position:absolute;margin-left: 5px;" class="flex">
+                                    <span class="d_arrow" style="border-top-color: #666;top: 19px;"></span>
+                                    <span class="d_arrow" style="border-top-color: #dddddd;"></span>
+                                </div>
+                            </li>
+                            <li><a href="#" class="tcc">天猫</a></li>
+                            <li><a href="#" class="tcc">店铺</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <i></i>
+                <div class="search_input">
+                    <input type="text" placeholder="搜索您想要的宝贝">
+                </div>
+                <div class="search_button">
+                    <button>搜索</button>
+                </div>
+
+            </div>
+            <div class="s_bottom">
+                <a href="#">新款连衣裙</a>
+                <a href="#">四件套</a>
+                <a href="#">潮流T恤</a>
+                <a href="#">时尚女装</a>
+                <a href="#">短裤</a>
+                <a href="#">半身裙</a>
+                <a href="#">男士外套</a>
+                <a href="#">墙纸</a>
+                <a href="#">行车记录仪</a>
+                <a href="#">新款男鞋</a>
+            </div>
+        </div>
+        <div class="download_container">
+            <span style="color: #ff5000; font-size: 12px; ">下载淘宝</span>
+            <img src="./images/download.webp" style="margin: 3px 7px 5px 7px;">
+        </div>
+    </div>
+
+
+
+    <!-- 主体 -->
+    <main class="flex">
+        <div class="m_container flex">
+            <!-- 分类栏 -->
+            <div class="classify">
+                <h2>分类</h2>
+                <ul>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-nvzhuang"></use>
+                        </svg>
+                        <a href="#">女装</a>
+                        <span>/</span>
+                        <a href="#">内衣</a>
+                        <span>/</span>
+                        <a href="#">奢品</a>
+                    </li>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-xiezi"></use>
+                        </svg>
+                        <a href="#">女鞋</a>
+                        <span>/</span>
+                        <a href="#">男鞋</a>
+                        <span>/</span>
+                        <a href="#">箱包</a>
+                    </li>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-huazhuangpin"></use>
+                        </svg>
+                        <a href="#">美妆</a>
+                        <span>/</span>
+                        <a href="#">饰品</a>
+                        <span>/</span>
+                        <a href="#">洗护</a>
+                    </li>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-nanzhuang"></use>
+                        </svg>
+                        <a href="#">男装</a>
+                        <span>/</span>
+                        <a href="#">运动</a>
+                        <span>/</span>
+                        <a href="#">百货</a>
+                    </li>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-shouji"></use>
+                        </svg>
+                        <a href="#">手机</a>
+                        <span>/</span>
+                        <a href="#">数码</a>
+                        <span>/</span>
+                        <a href="#">企业礼品</a>
+                    </li>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-shafa"></use>
+                        </svg>
+                        <a href="#">家装</a>
+                        <span>/</span>
+                        <a href="#">电器</a>
+                        <span>/</span>
+                        <a href="#">车品</a>
+                    </li>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-cherry-01"></use>
+                        </svg>
+                        <a href="#">食品</a>
+                        <span>/</span>
+                        <a href="#">生鲜</a>
+                        <span>/</span>
+                        <a href="#">母婴</a>
+                    </li>
+                    <li>
+                        <svg class="classify_icon" aria-hidden="true">
+                            <use xlink:href="#icon-huaban"></use>
+                        </svg>
+                        <a href="#">医药</a>
+                        <span>/</span>
+                        <a href="#">保健</a>
+                        <span>/</span>
+                        <a href="#">进口</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 分类栏右侧部分容器 -->
+            <div class="main">
+                <!-- 顶部容器 -->
+                <div class="main_top">
+                    <ul class="hot_nav">
+                        <li><a href="https://www.tmall.com" style="color: #FF0036">
+                                天猫
+                            </a>
+                        </li>
+
+                        <li class="pipe">|</li>
+                        <li><a href="https://ju.taobao.com" style="color: #FF0036">
+                                聚划算
+                            </a>
+                        </li>
+
+                        <li class="pipe">|</li>
+                        <li><a href="https://chaoshi.tmall.com" style="color: #33c900">
+                                天猫超市
+                            </a>
+                        </li>
+
+                        <li class="pipe">|</li>
+                        <li style=""><a href="https://sf.taobao.com">
+                                司法拍卖
+                            </a>
+                        </li>
+
+                        <li class="pipe">|</li>
+                        <li style=""><a href="https://www.fliggy.com">
+                                飞猪旅行
+                            </a>
+                        </li>
+
+                        <li class="pipe">|</li>
+                        <li style=""><a
+                                href="https://pages.tmall.com/wow/a/act/tiantian/dailygroup/2391/wupr?wh_pid=daily-231043">
+                                天天特卖
+                            </a>
+                        </li>
+                        <li class="pipe">|</li>
+
+
+                        <li style=""><a href="https://www.jiyoujia.com/">
+                                极有家
+                            </a>
+                        </li>
+
+                        <li class="pipe">|</li>
+                        <li style=""><a href="https://taolive.taobao.com/explore/index.html?isEntertainment=true">
+                                淘宝直播
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- 底部容器 -->
+                <div class="main_bottom flex">
+                    <!-- 轮播图容器 -->
+                    <div class="main_center">
+                        <div class="slide_p_container">
+                            <div class="left_button"></div>
+                            <div class="right_button"></div>
+                            <div class="slide_pictures">
+                                <img src="./images/1.jpg" alt="">
+                                <img src="./images/2.png" alt="">
+                                <img src="./images/3.jpg" alt="">
+                                <img src="./images/4.png" alt="">
+                                <img src="./images/5.jpg" alt="">
+                                <!-- <img src="./images/1.jpg" alt=""> -->
+                            </div>
+                            <div class="progress_container">
+                                <ul class="point_container flex">
+                                    <li class="point active"></li>
+                                    <li class="point"></li>
+                                    <li class="point"></li>
+                                    <li class="point"></li>
+                                    <li class="point"></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- 右侧用户界面容器 -->
+                    <div class="main_right flex">
+                        <div class="user_info">
+                            <div>
+                                <img src="./images/TB1yeWeIFXXXXX5XFXXuAZJYXXX-210-210.png_60x60.jpg" alt=""
+                                    style="border-radius: 50%;margin: 25px 0;">
+                            </div>
+                            <span>Hi!你好</span>
+                        </div>
+                        <div class="log flex">
+                            <a href="#">登录</a>
+                            <a href="#">注册</a>
+                            <a href="#">开店</a>
+                        </div>
+                        <div class="manipulate flex">
+                            <div class="flex">
+                                <a href="#">
+                                    <svg class="m_icon" aria-hidden="true">
+                                        <use xlink:href="#icon-shoucang"></use>
+                                    </svg>
+                                    <p>宝贝收藏</p>
+                                </a>
+
+                            </div>
+                            <div class="flex">
+                                <a href="#">
+                                    <svg class="m_icon" aria-hidden="true">
+                                        <use xlink:href="#icon-24gl-bag"></use>
+                                    </svg>
+                                    <p>买过的店</p>
+                                </a>
+                            </div>
+                            <div class="flex">
+                                <a href="#">
+                                    <svg class="m_icon" aria-hidden="true">
+                                        <use xlink:href="#icon-dianpu"></use>
+                                    </svg>
+                                    <p>收藏的店</p>
+                                </a>
+                            </div>
+                            <div class="flex">
+                                <a href="#">
+                                    <svg class="m_icon" aria-hidden="true">
+                                        <use xlink:href="#icon-shijian"></use>
+                                    </svg>
+                                    <p>我的足迹</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hots">
+                            <ul class="hot">
+                                <li>
+                                    <div class="hot_tip">热点
+                                    </div>
+                                    <p>淘宝网疫情影响地区发货时间要求调整公告</p>
+
+                                </li>
+                                <li>
+                                    <div class="hot_tip">热点</div>
+                                    <p>疫情场景淘宝卖家指导手册</p>
+                                </li>
+                                <li>
+                                    <div class="hot_tip">热点</div>
+                                    <p>淘宝平台打击流量造假、黑公关、网络水军公告</p>
+                                </li>
+                                <li>
+                                    <div class="hot_tip">热点
+                                    </div>
+                                    <p>淘宝网疫情影响地区发货时间要求调整公告</p>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 猜你喜欢部分容器 -->
+        <div class="like">
+            <h3>
+                <span>猜你喜欢</span>
+                <img src="./images/gxtj.png" alt="" style="height: 20px; margin-top:5px; margin-left:10px;">
+            </h3>
+            <!-- 主要容器 -->
+            <div class="like_containers flex">
+                <div class="l_containers">
+                    <a href="#" class="l_container">
+                        <div class="like_picture">
+                            <img src="./images/1.webp" alt="">
+                        </div>
+                        <div class="item_info">
+                            <div class="info tcc">
+                                夏季花花公子桑蚕丝短袖t恤翻领纯色爸爸装大码中年宽松男装上衣
+                            </div>
+                            <div class="tag">
+                                送运费险
+                            </div>
+                        </div>
+                        <div class="item_price">
+                            <span class="price_value"><em>¥</em>39</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="l_containers">
+                    <a href="#" class="l_container">
+                        <div class="like_picture">
+                            <img src="./images/2.webp" alt="">
+                        </div>
+                        <div class="item_info">
+                            <div class="info tcc">
+                                蕾丝加厚马桶垫夏季网红马桶坐垫大号坐便套U型马桶套通用坐便垫
+                            </div>
+
+                        </div>
+                        <div class="item_price">
+                            <span class="price_value"><em>¥</em>12.6</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="l_containers">
+                    <a href="#" class="l_container">
+                        <div class="like_picture">
+                            <img src="./images/3.webp" alt="">
+                        </div>
+                        <div class="item_info">
+
+                            <div class="info tcc"><img src="./images/HOT.png" alt="">
+                                修正天然维生素E,滋养肌肤
+                            </div>
+                            <div class="tag">
+                                送运费险
+                            </div>
+                        </div>
+                        <div class="item_price">
+                            <span class="price_value"><em>¥</em>39.9</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="l_containers">
+                    <a href="#" class="l_container">
+                        <div class="like_picture">
+                            <img src="./images/4.webp" alt="">
+                        </div>
+                        <div class="item_info">
+                            <div class="info tcc">
+                                超大号电线收纳盒理线盒插座插板电线整理盒电脑线竹制电源集线盒
+                            </div>
+                            <div class="tag">
+                                送运费险
+                            </div>
+                        </div>
+                        <div class="item_price">
+                            <span class="price_value"><em>¥</em>11.3</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="l_containers">
+                    <a href="#" class="l_container">
+                        <div class="like_picture">
+                            <img src="./images/5.webp" alt="">
+                        </div>
+                        <div class="item_info">
+                            <div class="info tcc"><img src="./images/HOT.png" alt="">
+                                春雨黄蜂蜜面膜贴10片补水保湿泛醇修护舒缓敏感肌学生韩国旗舰店
+                            </div>
+
+                        </div>
+                        <div class="item_price">
+                            <span class="price_value"><em>¥</em>119</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="l_containers">
+                    <a href="#" class="l_container">
+                        <div class="like_picture">
+                            <img src="./images/6.webp" alt="">
+                        </div>
+                        <div class="item_info">
+                            <div class="info tcc">
+                                夏季七分袖衬衫男宽松中国风男装防晒开衫外套薄款古风情侣道袍
+                            </div>
+                            <div class="tag">
+                                送运费险
+                            </div>
+                        </div>
+                        <div class="item_price">
+                            <span class="price_value"><em>¥</em>69</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <!-- 阅读更多按钮 -->
+        <button class="custom-btn more"><span onclick="add()">Click!</span><span>Read More</span></button>
+
+        <!--底部 -->
+        <div class="help_containers">
+            <div class="help_container">
+                <h4><svg class="help_icon" aria-hidden="true">
+                        <use xlink:href="#icon-guifandunpai"></use>
+                    </svg> 消费者保障</h4>
+                <ul>
+                    <li>保障范围</li>
+                    <li>退货退款流程</li>
+                    <li>服务中心</li>
+                    <li>更多特色服务</li>
+                </ul>
+            </div>
+            <div class="help_container">
+                <h4><svg class="help_icon" aria-hidden="true">
+                        <use xlink:href="#icon-bangzhu
+                        "></use>
+                    </svg> 新手上路</h4>
+                <ul>
+                    <li>新手专区</li>
+                    <li>24小时在线帮助</li>
+                    <li>免费开店</li>
+
+                </ul>
+            </div>
+            <div class="help_container">
+                <h4><svg class="help_icon" aria-hidden="true">
+                        <use xlink:href="#icon-fukuanfangshi"></use>
+                    </svg> 付款方式</h4>
+                <ul>
+                    <li>快捷支付</li>
+                    <li>信用卡</li>
+                    <li>余额宝</li>
+                    <li>蚂蚁花呗</li>
+                </ul>
+            </div>
+            <div class="help_container">
+                <h4><svg class="help_icon" aria-hidden="true">
+                        <use xlink:href="#icon-taobaotese"></use>
+                    </svg> 淘宝特色</h4>
+                <ul>
+                    <li>手机淘宝</li>
+                    <li>旺旺/旺信</li>
+                    <li>大众评审</li>
+
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <div id="box" class="flex">
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+        <div class="circle"><img src="./images/pig.jpg" style="width: 100%;border-radius: 50%;"></div>
+    </div>
+</body>
+<!-- <script src="./js/font_faezukwej3v/iconfont.js"></script>
+<script src="./js/font_zjaklp32xe/iconfont.js"></script>
+<script src="./js/font_5ja6ogomnp7/iconfont.js"></script>
+<script src="./js/font_z9d4zlvhf0o/iconfont.js"></script> -->
+<script src="./js/font_kijk8wr3v2s/iconfont.js"></script>
+<script src="./js/1.js"></script>
+
+</html>
